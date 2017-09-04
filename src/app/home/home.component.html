@@ -1,0 +1,58 @@
+<div class="home-wrap">
+  <app-nav></app-nav>
+  <div class="container">
+    <marquee *ngFor="let m of marquee">
+      <span id="clr" >{{m.marquee_text}}</span>
+    </marquee>
+    <div class="carousel">
+      <div class="content">
+        <h1>Welcome to BPIT</h1>
+        <p>The institute is situated at a prime location on Dr. K.N. Katju Marg, which separates Sector 11 and Sector 17 in Rohini, North Delhi.</p>
+        <div class="round-button">
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
+          <span id="med">See Location</span>
+        </div>
+      </div>
+    </div>
+    <div class="infos row">
+      <div class="news col-sm-9">
+        <h3>News and Events</h3>
+        <div class="text-center">
+          <loader [condition]="eventsLoader"></loader>
+        </div>
+        <div class="events-wrap row">
+          <div *ngFor="let event of events; let i=index" class="event col-sm-5">
+<!--            <div class="event-image">0{{i}}</div>-->
+            <div class="content">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <div class="texts">
+                <p>{{event.title}}</p>
+                  <a class="round-button black link" target="_blank" href={{event.events}}>
+                    Details
+                  <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                  </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="notices col-sm-3">
+        <h3>Notices</h3>
+        <div class="text-center">
+          <loader [condition]="noticesLoader"></loader>
+        </div>
+        <div class="notice-wrap">
+          <div *ngFor="let notice of notices" class="notice">
+              <div class="content">
+                <i class="fa fa-bell-o" aria-hidden="true"></i>
+                <p>{{notice.title}}</p>
+              </div>
+            <!-- <span>12 hours ago</span> -->
+            <a target="_blank" href={{notice.notices}}>Click for details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-foot></app-foot>
+</div>

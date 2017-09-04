@@ -1,0 +1,16 @@
+<div id="add-animation">
+  <h2>The Team</h2>
+   <div id="">
+     <!-- <div class="faculty col-md-9">  -->
+    <div *ngFor="let member of members" class="faculty col-md-9">
+      <div class="profilepic"></div>
+      <div class="content">
+        <h4>{{member.name}}</h4>
+        <p>{{member.des}}</p>
+        <p *ngIf="member.phone"><b>Phone No: </b> {{member.phone}}</p>
+        <p *ngIf="member.email"><b>Email: </b> {{member.email}}</p>
+      </div>
+    </div>
+     <!-- </div> -->
+   </div> 
+</div>

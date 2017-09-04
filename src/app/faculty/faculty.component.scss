@@ -1,0 +1,58 @@
+@import "src/styles.scss";
+
+.sidebar{
+  background: #ddd;
+  padding: 10px 0 10px 16px;
+  height: 100%;
+  h4{
+    color: #aaa;
+    padding: 5px 15px;
+  }
+  a{
+    display: block;
+    font-size: 15px;
+    padding: 5px 15px;
+    transition: $trans;
+  }
+  a:hover{
+    background: #fff;
+    padding-left: 20px;
+    border-left: 3px solid $secondary;
+  }
+  a:active,.active{
+    background: #fff;
+    padding-left: 20px;
+    border-left: 3px solid $secondary;
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+.top{
+  background: purple;
+  height: 50px;
+  color: white;
+  
+}
+
+.box{
+  padding: 20px !important;
+}
+
+.circle{
+  border-radius: 100%;
+  // float: right;
+}
+
+.modal-header{
+  background: purple;
+  color: white;
+}
+
+.name{
+      float: right;
+    margin-right: 20px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+  

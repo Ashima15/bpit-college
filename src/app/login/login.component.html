@@ -1,0 +1,9 @@
+<div id="add-animation" class="login-wrap">
+  <form action="" class="login-form">
+    <h2 id="clr">Login</h2>
+    <input type="text" name="username" [(ngModel)]="username" placeholder="Username">
+    <input type="password" name="password" [(ngModel)]="password" placeholder="Password">
+    <div id="submitbtn" (click)="login()" class="round-button">Submit</div>
+    <div class="error" *ngIf="error">Username or Password wrong</div>
+  </form>
+</div>

@@ -1,0 +1,108 @@
+<div class="nav-wrap">
+  <div class="head-bar">
+    <div class="container">
+      <span id="clr">
+        <!-- <a routerLink="/login">Sign In</a> -->
+         <a routerLink="/login" *ngIf="!loggedIn">Sign In</a> 
+         <a routerLink="/faculty" *ngIf="loggedIn">Hi, {{name}}</a>          
+      </span>
+    </div>
+  </div>
+  <div class="top-bar">
+    <div class="container">
+      <div class="wrap">
+        <div class="branding">
+          <div class="logo"><div class="box"></div></div>
+          <div class="logotype">
+            <div class="names">
+              <p id="big">Bhagwan Parshuram Institute of Technology</p>
+              <span>Affiliated To GGSIPU, Delhi, A unit of Bhartiya Brahmin Charitable Trust, <b>ISO 9001:2008 Certified</b></span>
+            </div>
+          </div>
+        </div>
+        <div class="search">
+          <i class="fa fa-search" aria-hidden="true"></i>
+          <span>Search</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="nav-bar">
+    <div class="container">
+      <div class="wrap">
+        <a id="med" routerLink="/home">Home</a>
+        <a id="med" routerLink="/aboutus">About Us</a>
+        <a id="med">
+          <p>Academics</p>
+          <div class="drop">
+            <a id="med">
+              <p>Programme</p>
+              <div class="lvl2 bigone">
+                <a id="med" routerLink="/btech">B.Tech</a>
+                <a id="med" routerLink="/sba">SBA</a>
+              </div>
+            </a>
+            <a id="med">
+              <p>Departments</p>
+              <div class="lvl2 bigone">
+                <a id="med" routerLink="/departments/as">Applied Sciences</a>
+                <a id="med" routerLink="/departments/cse">Computer Science Engineering</a>
+                <a id="med" routerLink="/departments/ece">Electronics and Communications Engineering</a>
+                <a id="med" routerLink="/departments/it">Information Technology Engineering</a>
+                <a id="med" routerLink="/departments/eee">Electricals and Electronics Engineering</a>
+                <a id="med" routerLink="/sba">School of Business Administration</a>
+              </div>
+            </a>
+          </div>
+        </a>
+        <a id="med">
+          <p>Facilties</p>
+          <div class="drop">
+            <a id="med" routerLink="/facilities/library">Library</a>
+            <a id="med" routerLink="/facilities/hostel">Hostel</a>
+            <a id="med" routerLink="/facilities/medicalroom">Medical room</a>
+            <a id="med" routerLink="/facilities/bookbank">Book Bank</a>
+            <a id="med" routerLink="/facilities/seminarhall">Seminar hall</a>
+            <a id="med" routerLink="/facilities/EDUSAT">EDUSAT</a>
+            <a id="med" routerLink="/facilities/sportsroom">Sports room</a>
+            <a id="med" routerLink="/facilities/canteen">Canteen</a>
+          </div>
+        </a>
+        <a id="med" >
+          <p>Placements</p>
+          <div class="drop">
+            <a id="med" routerLink="/placements/team">Team</a>
+            <a id="med" routerLink="/placements/training">Trainings</a>
+            <a id="med" routerLink="/placements/recruiters">Our Recruiters</a>
+            <a id="med" routerLink="/placements/talksandseminars">Expert Talks and Seminars</a>
+            <a id="med" routerLink="/placements/toursandworkshops">Industrial tours and workshops</a>
+            <a id="med" routerLink="/placements/studentsplaced">List of students placed</a>
+          </div>
+        </a>
+        <a id="med" >
+          <p>Student life</p>
+          <div class="drop">
+            <a id="med" >
+              <p routerLink="/student/examinations">Examinations</p>
+              <div class="lvl2">
+                <a id="med" target="_blank" href="http://www.ipu.ac.in/exam_notices.php">Notices</a>
+                <a id="med" target="_blank" href="http://www.ipu.ac.in/exam_datesheet.php">Datesheet</a>
+                <a id="med" target="_blank" href="http://ggsipu.ac.in/ExamResults/ExamResultsmain.htm">Results</a>  
+              </div>
+            </a>
+            <a id="med" routerLink="/student/events">Events</a>
+            <a id="med" routerLink="/student/publications">Publications</a>
+            <a id="med" routerLink="/student/projects">Projects</a>
+            <a id="med" routerLink="/student/achievments">Achievements</a>
+            <a id="med" routerLink="/student/societies">Societies</a>
+            <a id="med" routerLink="/student/sports">Sports</a>
+          </div>
+        </a>
+        <a id="med" routerLink="/nba">NBA</a>
+        <a id="med" routerLink="/disclosures">Disclosures</a>
+        <a id="med" routerLink="/nirf">NIRF</a>
+        <a id="med" routerLink="/contactus">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</div>

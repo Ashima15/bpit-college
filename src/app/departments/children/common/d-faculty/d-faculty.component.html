@@ -1,0 +1,24 @@
+<div id="add-animation">
+  <h2>Faculty of cse</h2>
+  <div class="faculty faculty col-md-9">
+    <div class="profilepic"></div>
+    <div class="content">
+      <h4>Dr. Payal Pahwa (Principal)</h4>
+      <h4 id="clr">Head of Department</h4>
+      <p>Ph.D.(CSE)</p>
+      <p><b>Experience:</b> 	22</p>
+      <p><b>Specialization:</b> Databases, Data Warehouse and Data Mining</p>
+      <p><b>Publications:</b> 58 <a id="clr" href="#">Google Scholar Profile</a></p>
+    </div>
+  </div>
+  <div *ngFor="let faculty of faculties" class="faculty col-md-9">
+    <div class="profilepic"></div>
+    <div class="content">
+      <h4>{{faculty.name}}</h4>
+      <p>{{faculty.qual}}</p>
+      <p><b>Experience:</b> {{faculty.exp}}</p>
+      <p><b>Specialization:</b> {{faculty.spec}}</p>
+      <p><b>Publications:</b> {{faculty.pubs}} <a id="clr" href="#">Google Scholar Profile</a></p>
+    </div>
+  </div>
+</div>

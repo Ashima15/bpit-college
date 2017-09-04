@@ -1,0 +1,41 @@
+@import "src/styles.scss";
+
+.d-wrap{
+  animation: $reveal;
+}
+
+h1{
+  padding: 20px 0;
+  color: $primary;
+}
+
+.sidebar{
+  background: #ddd;
+  padding: 10px 0;
+  h4{
+    color: #aaa;
+    padding: 5px 15px;
+  }
+  a{
+    display: block;
+    font-size: 15px;
+    padding: 5px 15px;
+    transition: $trans;
+  }
+  a:hover{
+    background: #fff;
+    padding-left: 20px;
+    border-left: 3px solid $secondary;
+  }
+  a:active,.active{
+    background: #fff;
+    padding-left: 20px;
+    border-left: 3px solid $secondary;
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+.content{
+  padding: 0 30px;
+}

@@ -1,0 +1,18 @@
+ <div id="add-animation">
+  <h2>Students Placed</h2>
+    <div class="text-center">
+       <loader [condition]="loader"></loader>
+    </div>
+    <div *ngIf="list">
+        <div *ngFor="let l of list">
+            <div class="container">
+                <div class="row dis">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        {{l.year}}
+                    </div>
+                    <div class="col-sm-2"><a href="{{l.data}}"><i class="fa fa-download "></i></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 

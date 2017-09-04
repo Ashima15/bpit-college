@@ -1,0 +1,11 @@
+<div id="add-animation">
+  <h2>Projects</h2>
+    <div class="text-center">
+       <loader [condition]="loader"></loader>
+    </div>
+  <div *ngFor="let project of projects">
+    <div>{{project.Project_title}}</div>
+    <div>{{project.description}}</div>
+    <img src="{{p.Project_pic}}">
+  </div>
+</div>

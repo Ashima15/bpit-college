@@ -1,0 +1,33 @@
+<div class="d-wrap">
+  <app-nav></app-nav>
+  <div class="container">
+    <div class="d-dash row row-eq-height">
+      <div class="col-sm-3 sidebar">
+        <h4>Menu</h4>
+        <a routerLink="about" routerLinkActive="active">About</a>
+        <!-- <a routerLink="" routerLinkActive="active">Objective</a> -->
+        <a routerLink="faculty" routerLinkActive="active">Faculty</a>
+        <a routerLink="lab" routerLinkActive="active">Lab Resources</a>
+        <a routerLink="faculty-publications" routerLinkActive="active">Faculty Publications</a>
+        <h4>Resources</h4>
+        <a routerLink="">Notices</a>
+        <a routerLink="">Time Table</a>
+        <a routerLink="">Lesson Plan</a>
+        <a routerLink="">Syllabus</a>
+        <a routerLink="">Academic Calendar</a>
+        <a routerLink="">Self Learning</a>
+        <a routerLink="">Study Material</a>
+        <a routerLink="">Datesheet</a>
+        <a routerLink="">Results</a>
+        <h4>Students</h4>
+        <a routerLink="">Projects</a>
+        <a routerLink="">Publications</a>
+        <a routerLink="">Achievements</a>
+      </div>
+      <div class="col-sm-9 content">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+  <app-foot></app-foot>
+</div>

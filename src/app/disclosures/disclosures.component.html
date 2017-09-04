@@ -1,0 +1,21 @@
+<app-nav></app-nav>
+<div class="disclosure-wrap container">
+  <h2 id="clr">
+    <i class="fa fa-eye" aria-hidden="true"></i>
+    Disclosure
+  </h2>
+       <div class="text-center">
+        <loader [condition]="loader" class="centerLoader"></loader>
+       </div>
+    <div *ngFor="let d of disclosures">
+        <div class="container">
+            <div class="row dis">
+                <div class="col-sm-8 col-sm-offset-2">
+                    {{d.disclosure_title}}
+                </div>
+                <div class="col-sm-2"><a href="{{d.disclosures}}"><i class="fa fa-download "></i></a></div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-foot></app-foot>

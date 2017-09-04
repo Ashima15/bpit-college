@@ -1,0 +1,51 @@
+@import "src/styles.scss";
+
+.login-wrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(#b647ff,white)
+}
+
+.login-form{
+  padding: 50px 20px;
+  background: #fff;
+}
+
+input{
+  display: block;
+  font-size: 15px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 0;
+  border-bottom: 2px solid $secondary;
+  &:focus{
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid $secondary;
+  }
+}
+
+.round-button{
+  margin-top: 20px !important;
+  border-color: $primary;
+  &:hover{
+    background: $primary;
+    color: #fff;
+  }
+}
+
+.process {
+  background: #888;
+  color: #fff;
+}
+
+.error{
+  color: red;
+  font-size: 12px;
+}

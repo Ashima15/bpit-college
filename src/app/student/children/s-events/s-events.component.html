@@ -1,0 +1,41 @@
+<div id="add-animation">
+    <div class="infos row">
+      <div class="news col-sm-9">
+        <h3>Events</h3>
+        <div class="text-center">
+          <loader [condition]="loader"></loader>
+        </div>
+        <div class="events-wrap row">
+          <div *ngFor="let event of events; let i=index" class="event col-sm-5">
+<!--            <div class="event-image">0{{i}}</div>-->
+            <div class="content">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <div class="texts">
+                <p>{{event.title}}</p>
+                  <a class="round-button black link" target="_blank" href={{event.events}}>
+                    Details
+                  <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                  </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="notices col-sm-3">
+        <h3>News</h3>
+        <div class="text-center">
+          <loader [condition]="newsLoader"></loader>
+        </div>
+        <div class="notice-wrap">
+          <div *ngFor="let n of news" class="notice">
+              <div class="content">
+                <i class="fa fa-bell-o" aria-hidden="true"></i>
+                <p>{{n.title}}</p>
+              </div>
+            <!-- <span>12 hours ago</span> -->
+            <a target="_blank" href={{n.news}}>Click for details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

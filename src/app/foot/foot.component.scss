@@ -1,0 +1,32 @@
+@import "src/styles.scss";
+
+.foot-wrap{
+  background: #ddd;
+  color: #555;
+  margin-top: 20px;
+  .container{
+    padding: 10px;
+    box-sizing: border-box;
+  }
+}
+
+a{
+  display: block;
+  transition: $trans;
+  &:hover{
+    color: $primary;
+  }
+}
+
+.col-sm-offset-4{
+  text-align: right;
+}
+
+#footsie{
+  padding: 10px;
+  text-align: center;
+  display: block;
+  box-sizing: border-box;
+  background: #222;
+  color: #fff;
+}
